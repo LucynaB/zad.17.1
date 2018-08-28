@@ -1,5 +1,8 @@
 package smarthome;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SterownikGlosnika implements Readable{
     private StacjaPogodowa stacjaPogodowa;
 

@@ -1,5 +1,8 @@
 package smarthome;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SmartHome {
     private SterownikGlosnika sterownikGlosnika;
     private SterownikPieca sterownikPieca;
@@ -9,5 +12,11 @@ public class SmartHome {
         this.sterownikGlosnika = sterownikGlosnika;
         this.sterownikPieca = sterownikPieca;
         this.sterownikRolet = sterownikRolet;
+    }
+
+    public void start(){
+        sterownikGlosnika.read();
+        sterownikPieca.read();
+        sterownikRolet.read();
     }
 }

@@ -1,7 +1,10 @@
 package smarthome;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
+@Component
 public class StacjaPogodowa {
     static Random rand = new Random();
     private int temp;
